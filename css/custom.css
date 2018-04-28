@@ -1,0 +1,194 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #262626;
+}
+h1 {
+  font-size: 75px;
+  color: #ffffff;
+  font-weight: bold;
+}
+h2 h6 {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+}
+.navigation {
+  /*margin-top removes gap between nav and browser*/
+  margin-top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: #e8ebef;
+}
+nav {
+  position: absolute;
+  text-align: center;
+  margin: 20px 0 0 ;
+  padding: 25px 0;
+}
+nav ul {
+  position: absolute;
+  top: 1%;
+  bottom: 0;
+  width: 100%;
+  /*Remove list bullets*/
+  list-style: none;
+  padding: 0;
+  display: flex;
+  /*Align the flex items at the center of the container*/
+  justify-content: space-around;
+}
+nav ul li {
+  /*width prevents other inline elements from shifting on hover*/
+  width: 24%;
+  list-style: none;
+  padding: 10px 20px 20px 0;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .75em;
+  color: #262626;
+  position: relative;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: #262626;
+  font-weight: bold;
+}
+/*:before selector inserts our animation/content at 0 width before the content of each li a*/
+nav ul li a:before {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #262626;
+  position: absolute;
+  top: 100%;
+  transition: .5s;
+}
+/*li:hover a:after increases width of our animation/content creating underline animation*/
+nav ul li:hover a:before {
+  width: 50%;
+  transform: translateX(100%);
+}
+.top-bottom, .about-me, .contact {
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  /*parallax effect. Fixed background images for all 3 sections*/
+  background-attachment:fixed;
+}
+.top-bottom {
+  background-image: url('../images/sasha-instagram-com-sanfrancisco-267948-unsplash.jpg');
+  min-height: 900px;
+}
+img {
+  position: relative;
+  bottom: 25px;
+  border-radius: 100px;
+  height: 200px;
+  width: 200px;
+}
+#message {
+  padding-right: .125em;
+}
+.about-me {
+  background-image: url('../images/mahdiar-mahmoodi-573573-unsplash.jpg');
+  min-height: 400px;
+}
+.contact {
+  background-image: url('../images/anurag-arora-202134-unsplash.jpg');
+  min-height: 400px;
+}
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+.section-me {
+  background-color: #282e34;
+  color: #666;
+}
+.section-dark-aboutMe {
+  background-color: #282e34;
+  color: #ddd;
+  height: auto;
+}
+.section-dark-contact {
+  background-color: #282e34;
+  color: #ddd;
+  height: 470px;
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 33px;
+  /*horizontal spacing between each word*/
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+.ptext .border.trans {
+  background-color: transparent;
+}
+.bottom-icons span {
+  padding: 10px;
+  width: 15px;
+}
+.email-icon {
+  font-size: 40px;
+}
+.email-icon a {
+  color: #e8ebef;
+}
+.email-icon a:hover {
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: bold;
+  transition: .2s;
+}
+.email-icon a:active {
+  color: #e8ebef;
+}
+.linkedin-icon {
+  position: relative;
+  bottom: 9px;
+  height: 27px;
+  width: 30px;
+  border-radius: 0;
+}
+.linkedin-icon:hover {
+  cursor: pointer;
+  transition: transform .5s; /* Animation */
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+}
+.copyright {
+  color: #58595b;
+  background-color: #3b3c3d;
+  width: 100%;
+  position: absolute;
+  position: absolute;
+  height: 23px;
+}
+.copyright p {
+  margin-left: 100px;
+  height: 0;
+  font-size: 12px;
+}
+.copyright p a:visited {
+  color: #58595b;
+}
