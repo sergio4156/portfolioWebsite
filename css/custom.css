@@ -75,7 +75,7 @@ nav ul li:hover a:before {
   width: 50%;
   transform: translateX(100%);
 }
-.top-bottom, .about-me, .contact {
+.top, .bottom, .about-me, .contact {
   position:relative;
   opacity:0.70;
   background-position:center;
@@ -84,18 +84,14 @@ nav ul li:hover a:before {
   /*parallax effect. Fixed background images for all 3 sections*/
   background-attachment:fixed;
 }
-.top-bottom {
-  background-image: url('../images/sasha-instagram-com-sanfrancisco-267948-unsplash.jpg');
-  min-height: 900px;
-}
-img {
+.I-Am {
   position: relative;
   bottom: 25px;
   border-radius: 100px;
   height: 200px;
   width: 200px;
 }
-#message {
+.dynamic-text {
   padding-right: .125em;
 }
 .about-me {
@@ -105,6 +101,10 @@ img {
 .contact {
   background-image: url('../images/anurag-arora-202134-unsplash.jpg');
   min-height: 400px;
+}
+.bottom {
+  background-image: url('../images/patrick-tomasso-354097-unsplash.jpg');
+  min-height: 900px;
 }
 .section {
   text-align: center;
@@ -122,7 +122,7 @@ img {
 .section-dark-contact {
   background-color: #282e34;
   color: #ddd;
-  height: 470px;
+  height: 460px;
 }
 .ptext {
   position: absolute;
@@ -142,6 +142,26 @@ img {
 }
 .ptext .border.trans {
   background-color: transparent;
+}
+.reach-out {
+  width: 97%
+}
+.reach-out ul li {
+  text-decoration: none;
+  list-style-type: none;
+  display: block;
+}
+.reach-out ul li:nth-child(2) {
+  display: none;
+}
+.reach-out ul li:nth-child(3) {
+  display: none;
+}
+#reach-out:hover {
+  cursor: pointer;
+}
+.bottom-icons {
+  width: 99%;
 }
 .bottom-icons span {
   padding: 10px;
@@ -177,18 +197,19 @@ img {
   margin: 0 auto;
 }
 .copyright {
-  color: #58595b;
+  color: #9b9ea3;
   background-color: #3b3c3d;
   width: 100%;
   position: absolute;
   position: absolute;
   height: 23px;
+  margin: 0;
 }
 .copyright p {
-  margin-left: 100px;
   height: 0;
   font-size: 12px;
+  margin: 0;
 }
 .copyright p a:visited {
-  color: #58595b;
+  color: #9b9ea3;
 }

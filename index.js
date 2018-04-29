@@ -1,22 +1,6 @@
-var apiImage = $.ajax({
-	type: 'GET',
-  	dataType: 'json',
-  	url: 'https://api.unsplash.com/users/sergio4156/likes/?client_id=f13ac5e8ebfa828152a8b37118d36f01fe9c11d29756718554bec313fc46afe1'
-});
-
-apiImage.done(function(data) {
-	//apiImage = data;
-	var image = data[0].urls.full;
-	console.log(image);
-	//init(image);
-
-	$('#backgroundImgDiv').append('<img src="' + image + '"/>')
-
-});
-
 ////////////////////////////////////////////////////
 
-(function scrollToSection() {
+function scrollToSection() {
 	$(document).ready(function() {
 		$('a[href^="#"]').on('click', function(event) {
 			event.preventDefault();
@@ -28,48 +12,51 @@ apiImage.done(function(data) {
 			}, 1000, 'swing');
 		});
 	});
-})();
+};
 
 ////////////////////////////////////////////////////
 
-(function animatedLandingPageText() {
+function animatedLandingPageText() {
 	var messages = ["user interfaces", "websites", "landing pages", "web applications"];
-	var target = document.getElementById("message");
+	var target = document.querySelector(".dynamic-text");
 	var counter = 0;
 
 	setInterval(function() {
 		target.innerHTML = messages[counter];
 		counter++;
-		console.log("message: " + messages[counter]);
-
 		if(counter >= messages.length) {
 			counter = 0;
 		}
 	}, 800);
-})();
-
-
+};
 
 ////////////////////////////////////////////////////
 
-function init(initialData) {
-	//console.log('initialData',initialData);
-	populateBackgroundImageContent(initialData);
+function toggleReachoutInfo() {
+	$('#reach-out').click(function() {
+		$('.submenu').slideToggle();
+	});
+};
+
+////////////////////////////////////////////////////
+
+function init() {
+	scrollToSection();
+	animatedLandingPageText();
+	toggleReachoutInfo()
 }
 
 ////////////////////////////////////////////////////
 
-function creatingHandlebarsTemplate(targetHandlebarsScriptElement, data, handlebarsPlaceHolderDiv) {
-	var handlebarsScriptSource = document.getElementById(targetHandlebarsScriptElement).innerHTML;
-	//console.log("handlebarsScriptSource: " + handlebarsScriptSource);
-	var handlebarsTemplateToRender = Handlebars.compile(handlebarsScriptSource);
-	var finalContentToRender = handlebarsTemplateToRender(data);
-	var finalContentToRenderPlaceHolder = document.getElementById(handlebarsPlaceHolderDiv);
-	finalContentToRenderPlaceHolder.innerHTML = finalContentToRender;
-}
+var unsplashApiImageData = $.ajax({
+	type: 'GET',
+  	dataType: 'json',
+  	url: 'https://api.unsplash.com/users/sergio4156/likes/?client_id=f13ac5e8ebfa828152a8b37118d36f01fe9c11d29756718554bec313fc46afe1'
+});
 
-////////////////////////////////////////////////////
-
-function populateBackgroundImageContent(imgData) {
-	creatingHandlebarsTemplate("background-image-template", imgData, "background-image-placeHolder-div");
-}
+unsplashApiImageData.done(function(imgData) {
+	var topBottomImage = imgData[2].urls.full;
+	//dynamically creating <img> and adding API uri as src
+	$('#top').prepend('<img style="min-height: 800px; width: 100%;" src="' + topBottomImage + '"/>');
+	init();
+});
