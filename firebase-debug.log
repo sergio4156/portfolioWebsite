@@ -1,0 +1,32 @@
+[debug] [2018-04-29T03:18:06.647Z] ----------------------------------------------------------------------
+[debug] [2018-04-29T03:18:06.647Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sergio.angel\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-04-29T03:18:06.647Z] CLI Version:   3.18.4
+[debug] [2018-04-29T03:18:06.647Z] Platform:      win32
+[debug] [2018-04-29T03:18:06.647Z] Node Version:  v8.9.4
+[debug] [2018-04-29T03:18:06.647Z] Time:          Sat Apr 28 2018 20:18:06 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-04-29T03:18:06.647Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-29T03:18:06.663Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-29T03:18:06.663Z] > authorizing via signed-in user
+[debug] [2018-04-29T03:18:06.663Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/sergioangel-9c0d7  
+  
+ Sat Apr 28 2018 20:18:06 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-04-29T03:18:07.218Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-29T03:18:07.218Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/sergioangel-9c0d7/tokens  
+  
+ Sat Apr 28 2018 20:18:07 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-04-29T03:18:07.749Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-29T03:18:07.749Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/sergioangel-9c0d7  
+  
+ Sat Apr 28 2018 20:18:07 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-04-29T03:18:08.107Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\sergio.angel\Desktop\portfolioWebsite'...
+[info] 
+[debug] [2018-04-29T03:18:08.123Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/480110748414/clients/_:getWebAppConfig  
+  
+ Sat Apr 28 2018 20:18:08 GMT-0700 (Pacific Daylight Time)
+[debug] [2018-04-29T03:18:08.645Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
