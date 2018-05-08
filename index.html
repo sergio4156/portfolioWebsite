@@ -1,92 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">	
-	<title>Sergio Angel | UI Developer</title>
-	<!-- jQuery Google CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    <!-- Custom css -->
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
-    <!-- Handlebars templating engine -->
-    <script src="./handlebars-v4.0.11.js"></script>
-    <script src="script.js" defer></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sergio Angel | UI Developer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles2.css">
+  <script src="main.js"></script>
 </head>
+
 <body>
-	<div class="container-fullwidth">
-		<nav class="navigation">
-			<ul>
-				<li><a href="#about-me">About Me</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li><a href="https://github.com/sergio4156/portfolioWebsite" target="_blank">Website Code on GitHub</a></li>
-			</ul>
-		</nav>
-		<div id="top" class="top">
-			<div class="ptext">
-				<h1>Hi, I'm Sergio! I design & build... <br><span class="dynamic-text"></span></h1>
-		    </div>
-		</div>
-		<div class="about-me" id="about-me">
-		    <div class="ptext">
-		    	<span class="border trans">
-		    		About Me
-		      	</span>
-		    </div>
-		</div>
-		<section class="section section-dark-aboutMe">
-			<div>
-				<img class="I-Am" src="images/me.jpg">
-			</div>
-			<h2>A beautiful life</h2>
-			<p>
-				I'm a User Interface Software Developer born and raised in San Francisco. I have so many fond memomories growing up here, so no matter where I'm at, I will always call this home. A little more about myself: I'm a part-time home Chef and bird owner. When I'm not coding you'll catch me jamming out to some cool music, attending Meetups, or going to Giants/Warriors game. Yet there are times when I just want to chill out and kick back. So on those days I'll head to my local comic book store, pickup a retro issue of Spider-Man, grap some Pupusas along the way. Then hit the park to read and enjoy the grub.
-	    	</p>
-	  	</section>
-	  	<div class="contact" id="contact">
-	    	<div class="ptext">
-	      		<span class="border trans">
-	        		Contact
-	      		</span>
-	    	</div>
-	  	</div>
-	  	<section class="section section-dark-contact">
-	  		<h2>Let's connect!</h2>
-	  		<p>
-	  			I'm a talented software developer, looking to my bring talents and passion for software development into a dynamic, fun, mission focussed company. I am dedicated to all things Javascript, HTML, CSS, frameworks, etc. Development is a true passion of mine so I'm always seeking opportunities for growth and expanssion. Hey that's what it's all about right?<br>
-	  			But seriosly now that I'm done selling myself, reach out to me! Let's discuss how I can be an asset to your team and help your company grow stronger.<br><br>
-	  		</p>
-	  		<div class="reach-out">
-	  			<ul>
-	  				<li id="reach-out">Click here for my digits</li>
-	  				<li class="submenu">San Francisco, CA</li>
-	  				<li class="submenu">(415) 724-4145</li>
-	  			</ul>
-	  		</div>
-  			<div class="bottom-icons">
-  				<span class="email-icon">
-  					<a href="mailto:sergio4156@gmail.com">&#9993;</a>
-  				</span>
-      			<span class="linkedin">
-      				<a href="https://www.linkedin.com/in/sangel1/" target="_blank">
-      					<img class="linkedin-icon" src="images/in.jpg">
-      				</a>
-      			</span>
-      		</div>
-	  	</section>
-	  	<div id="bottom" class="bottom">
-		    <div class="ptext">
-		    	<span class="border">
-		    		Look forward to meeting you soon!
-		      	</span>
-		    </div>
-		</div>
-		<div class="copyright"><p>Works within are &copy; to their respective owners. Background images courtesy of 
-			<a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash</p></a>.
-		</div>
-	</div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light py-0">﻿
+    <div class="container-fluid py-0">
+      <a class="navbar-brand py-0" href="#"><img class="logo img-fluid" src="images/logo.png"></a>
+      <button class="navbar-toggler toggler-button" data-toggle="collapse" data-target="#mainNav">
+        <span class="navbar-toggler-icon py-0"></span>
+      </button>
+      <div class="collapse navbar-collapse py-0" id="mainNav">
+        <div class="navbar-nav py-0">
+          <a class="nav-item nav-link" href="#about-me">about</a>
+          <a class="nav-item nav-link" href="#contact">contact</a>
+          <a class="nav-item nav-link" href="https://github.com/sergio4156/portfolioWebsite" target="_blank">code</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navigation Bar -->
+  <!-- Landing Page Section -->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 no-padding">
+          <div id="top" class="top">
+            <img class="img-fluid landing-img" id="test" src="images/sasha-instagram-com-sanfrancisco-267948-unsplash.jpg">
+            <div class="ptext">
+              <h1 class="dynamic-text-styles">Hi, I'm Sergio!<br> I design & build... <br><span class="dynamic-text"></span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Landing Page Section -->
+  <!-- About Me Section -->
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 no-padding">
+          <div class="about-me " id="about-me">
+            <div class="ptext">
+              <span class="border trans">About Me</span>
+            </div>
+          </div>
+          <section class="section section-dark-aboutMe">
+            <div>
+              <img class="I-Am img-fluid" src="images/me.jpg">
+            </div>
+            <h2>A beautiful life</h2>
+            <p class="aboutMe-text-styles">
+              I'm a UI Developer born and raised in San Francisco. I have so many fond memories growing up here, so no matter where I'm at, I will always call this home. A little more about myself: I'm a part-time home Chef and bird owner. When I'm not coding you'll catch me jamming out to some cool music, attending Meetups, or going to Giants/Warriors game. Yet there are times when I just want to chill out and kick back. So, on those days I'll head to my local comic book store, pick up a retro issue of Spider-Man, grab some Pupusas along the way. Then hit the park to read and enjoy the grub.
+            </p>
+          </section>
+
+          <div class="contact" id="contact">
+            <div class="ptext">
+                <span class="border trans">
+                  Contact
+                </span>
+            </div>
+          </div>
+          <section class="section section-dark-contact">
+            <h2>Let's connect!</h2>
+            <p>
+              I'm a talented software developer, looking to my bring talents and passion for software development into a dynamic, fun, mission focussed company. I am dedicated to all things Javascript, HTML, CSS, frameworks, etc. Development is a true passion of mine so I'm always seeking opportunities for growth and expanssion. Hey that's what it's all about right?<br>
+              But seriosly now that I'm done selling myself, reach out to me! Let's discuss how I can be an asset to your team and help your company grow stronger.<br><br>
+            </p>
+            <div class="reach-out">
+              <ul>
+                <li id="reach-out">Click here for my digits</li>
+                <li class="submenu">San Francisco, CA</li>
+                <li class="submenu">(415) 724-4145</li>
+              </ul>
+            </div>
+            <div class="bottom-icons">
+              <span class="email-icon">
+                <a href="mailto:sergio4156@gmail.com">&#9993;</a>
+              </span>
+              <span class="linkedin">
+                <a href="https://www.linkedin.com/in/sangel1/" target="_blank">
+                  <img class="linkedin-icon" src="images/in.jpg">
+                </a>
+              </span>
+            </div>
+          </section>
+          <div id="bottom" class="bottom">
+            <div class="ptext">
+              <span class="border">
+                See you soon!
+              </span>
+            </div>
+          </div>
+          <div class="copyright"><p>Works within are &copy; to their respective owners. Background images courtesy of 
+            <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer"> Unsplash</p></a>.
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Me Section -->
+
+
+  
+
+
+
+
+
+
 </body>
+</html>

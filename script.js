@@ -48,6 +48,7 @@ function init() {
 
 ////////////////////////////////////////////////////
 
+/*
 var unsplashApiImageData = $.ajax({
 	type: 'GET',
   	dataType: 'json',
@@ -57,6 +58,8 @@ var unsplashApiImageData = $.ajax({
 unsplashApiImageData.done(function(imgData) {
 	var topBottomImage = imgData[2].urls.full;
 	//dynamically creating <img> and adding API uri as src
-	$('#top').prepend('<img style="min-height: 800px; width: 100%;" src="' + topBottomImage + '"/>');
+	$('#top').prepend('<img class="img-fluid" style="min-height: 800px; width: 100%;" src="' + topBottomImage + '"/>');
 	init();
 });
+*/
+
